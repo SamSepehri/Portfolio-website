@@ -5,7 +5,7 @@
   --font-weight: #400;
   --font-size: #16px;
   --font-size-p1: #22px;
-  --visited-link: #05676e;
+  --visited-link: ##05676e;
 }
 
 * {
@@ -13,8 +13,8 @@
 }
 body {
     font-family: 'Lato' , sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
     /* Sets the font size to 16px */
     line-height: 1.6;
     /* Sets the line-height to 1.6 */
@@ -157,7 +157,7 @@ button:hover, button:focus {
     grid-row: auto / auto;
   }
   h1 {
-    font-size: 22px;
+    font-size: var(--font-size-p1);
   }
 }
 @media all and (max-width: 500px) {
@@ -179,7 +179,7 @@ button:hover, button:focus {
     grid-row: auto / auto;
   }
   h1 {
-    font-size: 22px;
+    font-size: var(--font-size-p1);
   }
 }
 
